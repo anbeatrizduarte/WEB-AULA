@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="teste.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="text-main">
+            <h1>Minha Biblioteca</h1>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script>
+    <input type="text">
+
+    <script>
+        $(function () {
+            $("input").on("input.highlight", function () {
+                // Determine o termo de pesquisa especificado
+                var search = $(this).val();
+                // Highlight termo de pesquisa dentro de um contexto específico
+                $("#lista").unmark().mark(search);
+            }).trigger("input.highlight").focus();
+        });
+    </script>
+    <div id="lista">
+        Oiiiii
+    </div>
+
+
+    
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.text-main {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.text-main h1 {
+    padding-top: 20px;
+    
+}
+
+mark {
+    background: orange;
+    color: black;
+  }
